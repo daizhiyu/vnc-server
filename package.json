@@ -1,0 +1,20 @@
+{
+  "name": "vnc-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": ["远程控制","vue"],
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "noVNC",
+    "websockify-js",
+    "index.js",
+    "README.md"
+  ],
+  "dependencies": {
+    "mime-types": "^2.1.35",
+    "optimist": "^0.6.1",
+    "ws": "^8.10.0"
+  }
+}
