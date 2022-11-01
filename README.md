@@ -57,6 +57,7 @@ const rfbServer =ref();
 const rfbRef =ref();
 onMounted(()=>{
   rfbServer.value=new RFB(rfbRef.value,vncConfig.websockify);
+  connect();
 })
 const connect=()=>{
   rfbServer.value.sendCredentials({password:vncConfig.password});

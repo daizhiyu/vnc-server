@@ -5,6 +5,7 @@
   "main": "index.js",
   "keywords": ["远程控制","vue"],
   "author": "",
+  "homepage": "https://github.com/daizhiyu/vnc-server",
   "license": "MIT",
   "files": [
     "noVNC",
