@@ -19,7 +19,7 @@ class  VncServer{
         // parse source and target arguments into parts
         try {
             let idx;
-            idx =  this.sourceArg.indexOf(":");
+            idx =  this.sourceArg.toString().indexOf(":");
             if (idx >= 0) {
                 source_host =  this.sourceArg.slice(0, idx);
                 source_port = parseInt( this.sourceArg.slice(idx+1), 10);
@@ -39,7 +39,7 @@ class  VncServer{
                 throw("illegal port");
             }
         } catch(e) {
-            console.error('VncServer need sourceArg like 9000 , targetArg like 127.0.0.1:5900  webDir ./noVNC  ')
+            console.error('VncServer need sourceArg like "9000" , targetArg like 127.0.0.1:5900  webDir ./noVNC  ')
           //  console.error("websockify.js [--web web_dir] [--cert cert.pem [--key key.pem]] [--record dir] [source_addr:]source_port target_addr:target_port");
             process.exit(2);
         }
