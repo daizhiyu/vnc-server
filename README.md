@@ -78,6 +78,7 @@ const disconnect = () => {
 ```
 
 
-参考 https://github.com/novnc/noVNC.git
+参考 https://github.com/novnc/noVNC.git;
+
      https://github.com/novnc/websockify
 
