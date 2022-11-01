@@ -2,7 +2,7 @@
 
  提供node服务 ，让其他电脑或设备可以通过浏览器或/vnc专属服务 远程连接到开启此服务的设备上
 
-包含 packages 是windows 64位 VNC 服务软件包
+包packages 是windows 64位 VNC 服务软件包
 
 ### VNC软件简介
 
