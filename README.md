@@ -32,9 +32,11 @@ let vncConfig={
   let   wsServer = new WebSocketServer({server: webServer});
     wsServer.on('connection', vnc_server.newClient);
 });
-
+  // 运行该 js  浏览器 访问 http://127.0.0.1:9000/vnc.html
 
 ```
+
+
 
 vue 使用    需要安装 @novnc/novnc  
 
