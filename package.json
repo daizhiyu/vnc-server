@@ -6,6 +6,10 @@
   "keywords": ["远程控制","vue"],
   "author": "",
   "homepage": "https://github.com/daizhiyu/vnc-server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daizhiyu/vnc-server.git"
+  },
   "license": "MIT",
   "files": [
     "noVNC",
