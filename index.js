@@ -135,7 +135,7 @@ VncServer.prototype.httpRequest =  function (request, response) {
             return this.httpError(response, 404, "404 Not Found");
         }
         if (fs.statSync(filename).isDirectory()) {
-            filename += '/index.html';
+            filename += '/vnc.html';
         }
         fs.readFile(filename, "binary", (err, file)=> {
             if(err) {
