@@ -1,4 +1,4 @@
-const vncServer =require('../index')
+const vncServer =require('vnc-server')
 const  WebSocketServer = require('ws').Server;
 let vncConfig={
     port:9000,
