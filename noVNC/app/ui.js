@@ -55,7 +55,12 @@ const UI = {
 
     // Render default UI and initialize settings menu
     start() {
-
+        queueMicrotask(()=>{
+            UI.connect(null, '123456');
+           setTimeout(()=>{
+               UI.showVirtualKeyboard();
+           },5000)
+        })
         UI.initSettings();
 
         // Translate the DOM
@@ -106,7 +111,7 @@ const UI = {
         // Bootstrap fallback input handler
         UI.keyboardinputReset();
 
-        UI.openControlbar();
+      //  UI.openControlbar();
 
         UI.updateVisualState('init');
 
@@ -1090,9 +1095,9 @@ const UI = {
         if (UI.getSetting('encrypt')) {
             msg = _("Connected (encrypted) to ") + UI.desktopName;
         } else {
-            msg = _("Connected (unencrypted) to ") + UI.desktopName;
+           // msg = _("Connected (unencrypted) to ") + UI.desktopName;
         }
-        UI.showStatus(msg);
+       // UI.showStatus(msg);
         UI.updateVisualState('connected');
 
         // Do this last because it can only be used on rendered elements
