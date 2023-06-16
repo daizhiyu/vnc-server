@@ -59,7 +59,9 @@ const rfbServer =ref();
 const rfbRef =ref();
 onMounted(()=>{
   rfbServer.value=new RFB(rfbRef.value,vncConfig.websockify);
-  connect();
+ setTimeout(()=>{
+      connect(); // 需要延时下 渲染http://127.0.0.1:9000/vnc.html 然后登录处理
+    },10)
 })
 const connect=()=>{
   rfbServer.value.sendCredentials({password:vncConfig.password});
